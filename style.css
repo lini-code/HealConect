@@ -188,3 +188,14 @@ header{
     margin-bottom: 40px;
     color:rgb(8, 8, 8);
 }
+
+.imagebg{
+    background-image: url('images/19ab15938f7cf5ffa97e268736d18df6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.principal{
+    width: 100%;
+    height: 500px;
+}
