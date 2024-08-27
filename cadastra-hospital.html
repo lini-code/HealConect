@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right,rgb(224, 255, 255), rgb(133, 212, 230));
+
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgba(0, 0, 0, 0.6) ;
+            padding: 15px; 
+            border-radius: 15px;
+            width: 20%;
+            color: white;
+        }
+        fieldset{
+            border: 3px solid rgb(288, 255, 254) ;
+        }
+        legend{
+            border: 1px solid rgb(288,255,254);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(228, 255, 254);
+            border-radius: 8px;
+            color: black;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing:2px ;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5px;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: rgb(62, 230, 225);
+        }
+        #submit{
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color:  rgb(62, 230, 225);
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right, rgb(224, 255, 255), rgb(123, 195, 228));
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <form action="">
+        <fieldset>
+            <legend><b>Fórmulario de Cadastro Hospitais</b></legend>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="name" class="labelInput">Nome do Hospital</label>
+            </div>
+                <br><br>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label for="name" class="labelInput">Endereço de Email</label>
+            </div>
+                <br><br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label for="name" class="labelInput">Telefone</label>
+            </div>
+                <br><br>
+            <p>Tipo de Hospital:</p>
+            <input type="radio" name="tipo" value="particular" required>
+            <label for="particular">Particular</label>
+            <br>
+            <input type="radio" name="tipo" value="publico" required>
+            <label for="publico">Público</label>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div>
+                <br><br>
+            <div class="inputBox">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado</label>
+            </div>
+                <br><br>
+            <div class="inputBox">
+                <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço</label>
+            </div>
+                <br><br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>    
+        </form>
+    </div>
+
+</body>
+</html>
