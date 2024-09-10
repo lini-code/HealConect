@@ -6,12 +6,13 @@ $password = "";             // Senha do banco de dados
 $dbname = "healconect";     // Nome do banco de dados
 
 // Conectar ao banco de dados
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
+try {
+    $conn = new mysqli($servername, $username, $password, $dbname);
+  } catch (\Throwable $th) {
+    throw $th;
+  }
 
 // Verificar se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
