@@ -100,7 +100,7 @@ p.slogan{
     
 }
 
-h3.funcao_principal{
+h3.fonte1{
     font-family: 'Arial', Courier, monospace;
     font-size: 25px;
     text-align: left;
@@ -111,7 +111,7 @@ h3.funcao_principal{
 }
 
 
-h1.planilha{
+h1.fonte2{
     font-family: 'Arial', Courier, monospace;
     font-size: 50px;
     text-align: left;
@@ -121,7 +121,17 @@ h1.planilha{
     
 }
 
-p.descricao{
+h2.fonte2_1{
+    font-family: 'Arial', Courier, monospace;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 100px;
+    color: rgb(7,34,70);
+    
+    
+}
+
+p.texto{
     font-family: 'Arial';
     font-size: 25px;
     text-align: left;
@@ -190,7 +200,7 @@ header{
 }
 
 .imagebg{
-    background-image: url('images/19ab15938f7cf5ffa97e268736d18df6.jpg');
+    background-image: url('imagens/WhatsApp Image 2024-08-13 at 17.27.47.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
