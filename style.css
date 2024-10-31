@@ -230,7 +230,7 @@ header{
   }
 
   .float-container {
-    padding-left: 600px;
+    padding-left: 400px;
 }
 
 .float-child-1 {
@@ -251,3 +251,16 @@ header{
     padding-left: 90px;
     padding-right: 10px;
 }  
+
+img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    float: left;
+  }
+
+.seta {
+
+    margin-top: 250px;
+
+  }
